@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IT+Trad:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+        }
+        .card {
+            width: 300px;
+            height: 400px;
+            background: #f8f5f5;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        .heart {
+            z-index: 100;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 100% 35%, 80% 100%, 50% 75%, 20% 100%, 0% 35%);
+        }
+        .message {
+            font-size: 18px;
+            color: #d81b60;
+            margin-top: 40px;
+        }
+        /* carddd*/
+.container{
+  
+  width:350px !important;
+  height:500px;
+  background: #f8f5f5;
+
+  position: absolute;
+  left: 50%;
+  top:45%;
+  transform: translate(-50%,-50%);
+  perspective: 1000px;
+  border-radius: 20px;
+  margin: 40px;
+}
+.cover{
+    width:350px;
+    height: 460px;
+    background: url();
+    position: absolute;
+    background: white;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all.5s ease-in;
+    border-radius: 20px;
+    
+}
+.container:hover .cover{
+    transform: rotateY(-180deg);
+}
+.cover img{
+  width: 357px;
+    position: relative;
+  
+}
+.central{
+  width:500px;
+  left: 560px;
+  display: inline;
+  position: relative;
+  z-index: 1;
+ 
+}
+.container p{
+ 
+ margin:20px 40px;
+ font-size: 23px;
+}
+.container ul li{
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+     
+        <div class="cover">
+            <img style="" class="door" src="photo.png" alt="">
+            
+        
+
+
+
+        </div>
+        <p></p>
+<div style="margin:20px;font-size: 1.5rem;">
+    <span style="font-style: italic; font-weight:400 ;font-family:  'Dancing Script', serif;">Hi Baby,</span>
+    <p style="font-family:  'Dancing Script', serif;font-size: 19px;">I know I’m not showing much excitement, but that's only because I’m exhausted with everything happening. You are my first real boyfriend with whom I actually wanted to celebrate and do all the cliché romantic things. 💕
+
+        Thank you for never making me feel alone and for making me stronger every day. I love you, cutie! 😘💖
+        
+        "You are my safe place. Happy Valentine's Day!"</p>
+        <img style="width: 100px; height: 60px; margin-left: 200px;" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWd5djd5ajh2MjJyNml6OW5mazZpbGNoNHNtY3Q0aDNhejh6bHNxYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vg71gR9oMojQsET93e/giphy.gif" alt="">
+</div>
+       
+<button style="margin-left: 100px;" onclick="goBack()" class="mt-6 mb-4 mr-100 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition">
+    Back to Home
+</button>   
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
